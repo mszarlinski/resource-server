@@ -29,7 +29,9 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
             .authorizeRequests()
             .regexMatchers(HttpMethod.GET, "/person").permitAll()
             .regexMatchers(HttpMethod.POST).access("#oauth2.hasScope('write')")
-            .anyRequest().authenticated();
+            .anyRequest().authenticated()
+            .and()
+            .csrf().disable();
     }
 
     @Bean
