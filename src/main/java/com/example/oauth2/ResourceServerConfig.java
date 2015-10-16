@@ -17,7 +17,6 @@ import org.springframework.security.oauth2.provider.token.RemoteTokenServices;
  * @author mszarlinski on 2015-10-12.
  */
 @Configuration
-@EnableWebSecurity // required by @EnableResourceServer
 @EnableResourceServer
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
@@ -36,7 +35,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Bean
     public RemoteTokenServices remoteTokenServices(
-        final @Value("${auth.server.url}") String checkTokenUrl,
+        final @Value("${auth.server.checkTokenUrl}") String checkTokenUrl,
         final @Value("${auth.server.clientId}") String clientId,
         final @Value("${auth.server.clientsecret}") String clientSecret) {
 
