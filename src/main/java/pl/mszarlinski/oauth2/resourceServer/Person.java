@@ -1,4 +1,4 @@
-package com.example;
+package pl.mszarlinski.oauth2.resourceServer;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

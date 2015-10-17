@@ -1,4 +1,4 @@
-package com.example;
+package pl.mszarlinski.oauth2.resourceServer;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.RequestMapping;

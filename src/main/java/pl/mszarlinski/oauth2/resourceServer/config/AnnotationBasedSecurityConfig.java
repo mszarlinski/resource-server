@@ -1,4 +1,4 @@
-package com.example.oauth2;
+package pl.mszarlinski.oauth2.resourceServer.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.access.expression.method.MethodSecurityExpressionHandler;

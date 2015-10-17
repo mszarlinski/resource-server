@@ -1,4 +1,4 @@
-package com.example;
+package pl.mszarlinski.oauth2.resourceServer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
