@@ -36,7 +36,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     public RemoteTokenServices remoteTokenServices(
         final @Value("${auth.server.checkTokenUrl}") String checkTokenUrl,
         final @Value("${auth.server.clientId}") String clientId,
-        final @Value("${auth.server.clientsecret}") String clientSecret) {
+        final @Value("${auth.server.clientSecret}") String clientSecret) {
 
         final RemoteTokenServices remoteTokenServices = new RemoteTokenServices();
         remoteTokenServices.setCheckTokenEndpointUrl(checkTokenUrl);
